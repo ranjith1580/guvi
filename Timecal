@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Timecal {
+
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the starting time HH:MM and ENDING time HH:MM");
+		String one=sc.next();
+		String two=sc.next();
+		String a[]=one.split(":");
+		String b[]=two.split(":");
+		int min=((Math.abs(Integer.parseInt(a[0])-Integer.parseInt(b[0])))*60)+(-(Integer.parseInt(a[1])-Integer.parseInt(b[1])));
+		System.out.println(min);
+	}
+
+}
